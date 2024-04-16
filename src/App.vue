@@ -1,26 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <web-personal />
+    <about-me />
+    <my-skills />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import WebPersonal from "@/components/home/WebPersonal.vue";
+import AboutMe from "@/components/home/AboutMe.vue";
+import MySkills from '@/components/home/MySkills.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    WebPersonal,
+    AboutMe, 
+    MySkills
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
