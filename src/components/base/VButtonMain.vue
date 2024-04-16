@@ -29,5 +29,8 @@
         border-radius: 6px;
         text-decoration: none;
         margin-top: 10px;
+        margin-right: 10px;
+        font-family: $ff-primary;
+        font-size: 15px;
     }
 </style>
