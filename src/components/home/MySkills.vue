@@ -67,6 +67,11 @@ import VCardMain from "@/components/base/VCardMain.vue";
         &__items{
             display: grid;
             grid-template-columns: 400px 400px;
+            @media screen and (max-width:768px) {
+                display: flex ;
+                flex-direction: column;
+                padding-top: 2em;
+            }
         }
     }
 </style>

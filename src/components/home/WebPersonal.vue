@@ -36,12 +36,26 @@ import VButtonMain from '@/components/base/VButtonMain.vue'
 @import '../_app.scss';
     .personal-data{
         display: flex;
+        @media screen and (max-width:768px) {
+                width: 100%;
+                display: block;
+                &__left{
+                    width: 100%;
+                }
+                &__right{
+                    width: 100%;
+                }
+            }
         &__left{
             background: $color1;
             width: 60%;
             display: flex;
             justify-content: center;
             align-items: center;
+            @media screen and (max-width:768px) {
+                width: 100%;
+                padding: 2em 0;
+            }
             &__content{
                 max-width: 60%;
                 color: $white;
@@ -68,10 +82,20 @@ import VButtonMain from '@/components/base/VButtonMain.vue'
         &__right{
             background: $color2;
             width: 40%;
+            @media screen and (max-width:768px) {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &__img{
+
+                }
+            }
             &__img{
                 width:400px;
                 position: relative;
             }   
         }
+
     }
 </style>

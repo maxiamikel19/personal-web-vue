@@ -41,6 +41,10 @@ import VButtonMain from '@/components/base/VButtonMain.vue';
 @import '../_app.scss';
 
     .about{
+        @media screen and (max-width:768px) {
+            display: block;
+            padding: 2em;
+        }
         display: flex;
         justify-content: center;
         align-items: center;
@@ -49,6 +53,12 @@ import VButtonMain from '@/components/base/VButtonMain.vue';
         background: $color1;
         margin-top: 1px;
         &__content{
+            @media screen and (max-width:768px) {
+            display: block;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
             width: 70%;
             display: flex;
             align-items: center;
@@ -58,6 +68,15 @@ import VButtonMain from '@/components/base/VButtonMain.vue';
                 width: 180px;
                 height: 200px;
                 margin-right: 3em;
+                @media screen and (max-width:768px) {
+                    width:130px;
+                    height: 140px;
+                    margin-bottom: 1em;
+                    display: none;
+                    &__img{
+                        width: 80%;
+                    }
+                }
                 &__img{
                     width: 100%;
                     height: 100%;
@@ -72,6 +91,10 @@ import VButtonMain from '@/components/base/VButtonMain.vue';
                 width: 50%;
                 color: $white;
                 padding: 20px;
+                @media screen and (max-width:768px) {
+                    width: 80%;
+                    padding: 2em;
+                }
                 &__title{
                     font-family: $ff-primary;
                     font-size: 17px;
